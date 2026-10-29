@@ -1,0 +1,119 @@
+
+/* general style */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #222222;
+    margin: 0;
+    padding: 30px;
+}
+
+/* timeetable ocntainer*/
+.timetable-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 100px auto;
+}
+
+/* main table  */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 12px;
+}
+
+/* atble arrangmetn and cell allignment*/
+th,
+td {
+    border: 1px solid #222222;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* left empty box*/
+.time-heading {
+    width: 80px;
+    background-color: #dedede;
+}
+
+/* main title */
+.main-heading {
+    background-color: #dedede;
+    font-size: 14px;
+    font-weight: bold;
+    height: 18px;
+}
+
+/* days*/
+thead th {
+    background-color: #dedede;
+    font-weight: bold;
+    height: 16px;
+}
+
+/* timen col */
+tbody th {
+    background-color: #dedede;
+    width: 80px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: bold; 
+}
+
+/* 9 empty rows*/
+tbody td {
+    height: 20px;
+    background-color: white;
+}
+
+/* lesson boxes */
+.lesson {
+    background-color: #f0f0f0;
+    padding: 6px;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* deatails of lessons */
+.lesson p {
+    margin: 5px 0;
+    line-height: 1.3;
+    font-weight: normal;
+}
+
+/* coes and titles */
+.lesson strong {
+    display: block;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* room numbers */
+.lesson small {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 6px;
+    font-size: 11px;
+    text-align: right;
+}
+
+/* small adjustments*/
+@media screen and (max-width: 800px) {
+    body {
+        padding: 10px;
+    }
+
+    .timetable-container {
+        margin: 30px auto;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 900px;
+    }
+}
