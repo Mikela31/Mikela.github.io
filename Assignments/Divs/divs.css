@@ -1,38 +1,85 @@
-body{
+
+/* General page styling */
+body {
     background-color: #ffa9b0;
     color: white;
+    margin: 0;
 }
 
-.bigBox{
-    display:flex;
+/* The three main boxes */
+.bigBox {
+    display: flex;
     height: 50vh;
     justify-content: space-around;
+    gap: 30px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.smallBox{
-    flex-grow: 1;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-right: 50px;
+/* Main box styling */
+.smallBox {
+    flex: 1;
+    min-width: 0;
+    margin: 0 20px;
+    padding: 20px;
     border: 1px solid black;
+    box-sizing: border-box;
 }
 
-
-.pink{
+/* Main box colours */
+.pink {
     background-color: #c45da2;
 }
 
-.blue{
+.blue {
     background-color: #6aadce;
 }
 
-.green{
-    background-color: #b2fd92;
+.green {
+    background-color: #7bb861;
+    display: flex;
+    flex-direction: column;
 }
 
-
+/* Inner boxes layout */
 .flex-container {
-  display: flex;
-  gap: 16px;
-  padding: 16px;
+    display: flex;
+    gap: 15px;
+    flex: 1;
+    min-height: 0;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* All three inner boxes */
+.box {
+    background-color: #b2fd92;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 15px;
+    box-sizing: border-box;
+    color: black;
+    font-size: 18px;
+    min-width: 0;
+}
+
+/* Tall box on the left */
+.box-tall {
+    flex: 1;
+}
+
+/* Two boxes stacked on the right */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+    min-height: 0;
+}
+
+/* Each right-hand box */
+.box-square {
+    flex: 1;
+    min-height: 0;
 }
